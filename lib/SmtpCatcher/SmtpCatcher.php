@@ -68,7 +68,7 @@ class SmtpCatcher
             $database = json_decode(file_get_contents(__DIR__ . '/../../cache/database.json'), true);
             $database[$time] = $this->mail;
         } else {
-            $database = [];
+            $database = array();
             $database[$time] = $this->mail;
         }
 
